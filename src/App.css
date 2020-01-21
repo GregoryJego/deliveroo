@@ -1,0 +1,370 @@
+/* LA PAGE COMPLETE */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* HEADER */
+
+.header {
+  height: 60px;
+  display: flex;
+  padding-left: 3rem;
+  border-bottom: 1px solid #e9ebeb;
+}
+
+/* LOADER */
+
+.loader-container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* RESTAURANT */
+
+.restaurant {
+  margin-top: 0.5rem;
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.restaurant-infos {
+  width: 65%;
+}
+
+.restaurant-name {
+  color: #2e3333;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.restaurant-desc {
+  color: #868a8a;
+  font-size: 1.2rem;
+  letter-spacing: normal;
+  line-height: 1.7rem;
+}
+
+.restaurant-img {
+  width: 31%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+/* BODY */
+
+.body {
+  background-color: #f3f5f5;
+  padding: 3rem 1.5rem;
+  display: flex;
+}
+
+/* PANIER */
+
+.basket {
+  position: sticky;
+  top: 2rem;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: 0.5px 0.5px 5px grey;
+  height: 100%;
+  min-width: 30%;
+}
+
+.basket-text {
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-validate-inactive {
+  background-color: #bac3c3;
+  color: #92a0a1;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.button-validate-active {
+  background-color: #00cdbd;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+p {
+  text-align: center;
+  color: #b6b8b8;
+}
+
+.basketLine {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #444848;
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+}
+
+.sous-total {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  justify-content: space-between;
+}
+
+.basket-button {
+  cursor: pointer;
+}
+
+.basket-title {
+  width: 60%;
+}
+
+.basket-price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 20%;
+}
+
+.basket-quantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
+  color: #00cebd;
+}
+
+/* MENU */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.menu-items {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.categorie {
+  color: #2e3333;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  max-width: 20rem;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  box-shadow: 0.5px 0.5px 10px black;
+}
+
+.item-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.item-image {
+  width: 35%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.item-name {
+  color: #2e3333;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.item-desc {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #9fa2a2;
+  font-size: 0.9rem;
+  height: 2.4rem;
+  line-height: 1.2rem;
+  overflow: hidden;
+}
+
+.item-bottom-infos {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.item-price {
+  color: #828585;
+  font-size: 0.9rem;
+}
+
+.item-popular {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #ff870e;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 5rem;
+  }
+  .restaurant {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0.5rem;
+  }
+  .restaurant-infos {
+    width: 80%;
+    text-align: justify;
+  }
+  .restaurant-img {
+    margin-top: 1rem;
+    width: 80%;
+  }
+
+  .body {
+    flex-direction: column;
+    align-items: center;
+  }
+  .basket {
+    order: -1;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  .menu-item {
+    margin-right: 0;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    max-width: 70rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item-infos {
+    width: 90%;
+  }
+  .item-image {
+    margin-top: 1rem;
+    width: 80%;
+  }
+  .basket-title {
+    width: 50%;
+  }
+  .basket-quantity {
+    width: 20%;
+  }
+  .basket {
+    position: relative;
+    margin-bottom: 5rem;
+  }
+  .basket-picto {
+    display: inline-block;
+  }
+}
+
+.basket-picto {
+  display: none;
+}
+
+.top-basket {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  color: #2e3333; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+}
+
+.top-basket:hover {
+  color: #555; /* Add a dark-grey background on hover */
+}
+
+.basket-counter {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  right: -20px;
+  bottom: -10px;
+  color: black;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
